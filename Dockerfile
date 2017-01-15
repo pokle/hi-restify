@@ -1,5 +1,4 @@
-FROM node:6
-RUN npm install pm2 -g
+FROM keymetrics/pm2-docker-alpine:latest
 ADD . /var/app
 WORKDIR /var/app
 RUN NODE_ENV=production npm install
