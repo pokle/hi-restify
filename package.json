@@ -1,0 +1,11 @@
+{
+  "name": "hi-restify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "restify": "^4.3.0"
+  },
+  "scripts": {
+      "start": "pm2-docker server.js"
+  }
+}
