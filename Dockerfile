@@ -1,4 +1,6 @@
-FROM keymetrics/pm2-docker-alpine:latest
+FROM alpine:latest
+RUN apk update && apk add nodejs
+RUN npm install --global pm2
 ADD . /var/app
 WORKDIR /var/app
 RUN NODE_ENV=production npm install
